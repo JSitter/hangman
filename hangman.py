@@ -19,7 +19,7 @@ def isWordGuessed(secretWord, lettersGuessed):
     returns: boolean, True only if all the letters of secretWord are in lettersGuessed;
       False otherwise
     '''
-    # FILL IN YOUR CODE HERE...
+    return False
 
 
 
@@ -45,7 +45,7 @@ def getAvailableLetters(lettersGuessed):
     '''
 def checkGuess(currentGuess, previousGuesses):
     #check if guess is a letter
-    if not isalpha(currentGuess):
+    if not currentGuess.isalpha():
         print("Hey! Only letters are valid in this game.")
         return False
 
@@ -163,7 +163,7 @@ def hangman(secretWord):
             else:
                 print("You're DEAD!")
             replay = input("Would you like to play again? y or n: ") 
-            if(replay == 'y')
+            if(replay == 'y'):
                 #reset board
                 board = ""
                 guesses = ''
