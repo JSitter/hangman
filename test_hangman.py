@@ -1,9 +1,5 @@
 import pytest
+import hangman
 
-def myvar():
-    return '1'
-
-
-def test_var():
-    x = myvar()
-    assert x == '1'
+def test_terst():
+    assert hangman.terst() == 5
